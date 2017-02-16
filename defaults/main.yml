@@ -1,0 +1,5 @@
+---
+# defaults file for tor-browser-bundle
+tbb_arch: 64
+tbb_release: 6.0.6
+tbb_locale: en-US

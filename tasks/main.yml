@@ -1,0 +1,7 @@
+---
+# tasks file for tor-browser-bundle
+- include: install_apt_dependencies.yml
+- include: download_tbb.yml
+- include: verify_tbb.yml
+- include: extract_tbb.yml
+  when: gpg_verify_result.rc == 0
