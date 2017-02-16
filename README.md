@@ -1,3 +1,5 @@
+!https://travis-ci.org/parmegv/ansible-tor-browser-bundle.svg?branch=master!:https://travis-ci.org/parmegv/ansible-tor-browser-bundle
+
 Role Name
 =========
 
