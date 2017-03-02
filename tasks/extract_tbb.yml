@@ -12,5 +12,5 @@
 - name: Extract TBB archive.
   unarchive:
     copy: no
-    src: "{{ tbb_directory }}/{{ tbb_filename }}"
+    src: "{{ dirpath }}/{{ tbb_filename }}"
     dest: "{{ dirpath }}"
