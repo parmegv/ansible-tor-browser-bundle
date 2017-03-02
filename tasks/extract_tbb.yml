@@ -6,11 +6,11 @@
 # overwrite a potentially polluted browser profile. Hence the following:
 - name: Remove the dir the TBB tarball will be extracted to.
   file:
-    path: "{{ tbb_directory }}/{{ tbb_extracted_dirname }}"
+    path: "{{ path }}"
     state: absent
 
 - name: Extract TBB archive.
   unarchive:
     copy: no
     src: "{{ tbb_directory }}/{{ tbb_filename }}"
-    dest: "{{ tbb_directory }}"
+    dest: "{{ dirpath }}"
