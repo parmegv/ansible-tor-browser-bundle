@@ -1,13 +1,13 @@
 - name: Create tbb directory
   file:
-    path: "{{ dirpath }}"
+    path: "{{ tbb_dirpath }}"
     state: directory
     mode: 0755
 
 - name: Download TBB tarball and signature (latest)
   get_url:
     url: "{{ item }}"
-    dest: "{{ dirpath }}"
+    dest: "{{ tbb_dirpath }}"
   with_items:
     - "{{ latest_tbb_url }}"
     - "{{ latest_tbb_signature_url }}"
@@ -17,7 +17,7 @@
 - name: Download TBB tarball and signature (from archive)
   get_url:
     url: "{{ item }}"
-    dest: "{{ dirpath }}"
+    dest: "{{ tbb_dirpath }}"
   with_items:
     - "{{ old_tbb_url }}"
     - "{{ old_tbb_signature_url }}"

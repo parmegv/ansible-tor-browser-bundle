@@ -3,4 +3,4 @@
   apt:
     name: "{{ item }}"
     state: latest
-  with_items: "{{ apt_dependencies }}"
+  with_items: "{{ tbb_apt_dependencies }}"

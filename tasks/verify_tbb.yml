@@ -8,4 +8,4 @@
   register: gpg_verify_result
   changed_when: false
   args:
-    chdir: "{{ dirpath }}"
+    chdir: "{{ tbb_dirpath }}"
